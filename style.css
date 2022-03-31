@@ -1,0 +1,51 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.box{
+    width:300px;
+    height:300px;
+    background-color: red;
+    margin: 50px;
+    position: relative;
+}
+.fearture{
+    height:200px;
+    overflow: hidden;
+}
+.fearture img{
+    width:100%;
+}
+.content{
+    height:200px;
+    width:100%;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.692);
+    position:absolute;
+    top:0;
+    left:0;
+    transition-duration: 2s;
+    visibility: hidden;
+    opacity: 0;
+}
+.box:hover .content{
+    visibility: visible;
+    opacity: 1;
+}
+.content1{
+    height:0;
+    width:100%;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.582);
+    position:absolute;
+    bottom:0;
+    right:0;
+    transition-duration: 2s;
+    visibility: hidden;
+}
+.box:hover .content1{
+    height:100%;
+    visibility: visible;
+    opacity: 1;
+}
